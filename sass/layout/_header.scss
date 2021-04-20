@@ -7,7 +7,7 @@
 }
 
 .heading {
-    background-image: url("./images/image-header-mobile.jpg");
+    background-image: url("../images/image-header-mobile.jpg");
     background-color: abstracts.$purple-bg-tx;
     background-repeat: no-repeat;
     width: 100%;
@@ -21,7 +21,7 @@
     }
 
     @include abstracts.mQ(860px) {
-        background-image: url("./images/image-header-desktop.jpg");
+        background-image: url("../images/image-header-desktop.jpg");
         border-radius: 0 8px 8px 0;
         .inner {
             padding-top: 82.6%;
