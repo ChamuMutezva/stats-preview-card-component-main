@@ -1,0 +1,19 @@
+@use '../abstracts';
+body {
+    background-color: abstracts.$bg-main;
+    color: abstracts.$white-tx;
+    font-family: abstracts.$main-font ;
+    font-size: abstracts.$font-px;
+}
+.wrapper {
+	margin: 88px 24px;
+    max-width: 1110px;
+    @include abstracts.mQ(860px) {
+        display: flex;
+        flex-direction: row-reverse; 
+        margin: 100px auto;
+    }
+    @include abstracts.mQ(1180px) {
+        margin: 165px auto;
+    }
+}

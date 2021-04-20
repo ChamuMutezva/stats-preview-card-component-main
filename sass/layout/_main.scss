@@ -1,0 +1,91 @@
+@use '../abstracts';
+
+.main {
+    padding-top: 35px;
+    background-color: abstracts.$bg-secondary;
+    padding-bottom: 35px;
+
+    .title {
+        font-size: abstracts.calculateRem(28);
+        line-height: 32px;
+        text-align: center;
+        //font-family: abstracts.$secondary-font;
+        font-weight: 700;
+        padding: 0 24px;
+    }
+
+    .title__purple {
+        color: abstracts.$purple-bg-tx;
+    }
+
+    .main__content {
+        line-height: 25px;
+        font-size: abstracts.calculateRem(15);
+        text-align: center;
+        padding: 24px;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .summary__item {
+        font-size: abstracts.calculateRem(12);
+        line-height: 25px;
+        letter-spacing: 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        text-transform: uppercase;
+    }
+
+    .summary__item__num {
+        font-size: abstracts.calculateRem(24);
+        letter-spacing: 0;
+    }
+
+    @include abstracts.mQ(565px) {
+        .container {
+            flex-direction: row;
+            justify-content: center;
+        }
+
+    }
+
+    @include abstracts.mQ(860px) {
+        flex: 1 1 50%;
+        border-radius: 8px 0 0 8px;
+        padding: 20px 45px;
+        display: grid;
+        place-content: center;
+
+        .container {
+            justify-content: space-between;
+        }
+
+        .title {
+            text-align: left;
+            font-size: abstracts.calculateRem(36);
+            line-height: 44px;
+            padding: 0;
+        }
+
+        .main__content {
+            text-align: left;
+            padding: 15px 0px;
+        }
+    }
+
+    @include abstracts.mQ(1180px) {
+        padding: 85px 75px 50px;
+
+        .main__content {
+            padding: 42px 0px;
+        }
+    }
+}
