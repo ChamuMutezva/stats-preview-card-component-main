@@ -13,6 +13,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cssnano": "^5.0.1",
+    "postcss": "^8.2.10",
     "sass": "^1.32.10"
   }
 }
