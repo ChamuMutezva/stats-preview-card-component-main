@@ -72,7 +72,7 @@ Users should be able to:
         height: 0;
         padding-top: 73.4%;
     }
-    ```
+  ```
 
 height is not set at the moment. The div with the class `inner` is used to set the height.
 Padding-top is used on this element as a percentage of `actual image height divided actual image width multiplied by 100%` . In this case for small screens we get `480 divided by 654 times 100%` giving us a rounded percentage of `73.4%`. The image for larger screens will be calculated as `446 divided 540 times 100%` giving us a rounded total of `82.6%`
